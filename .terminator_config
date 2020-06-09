@@ -18,8 +18,8 @@
       order = 0
       parent = ""
       position = 0:0
-      size = 1920, 1080
-      title = TFW
+      size = 1400, 800
+      title = HA Demo
       type = Window
     [[[two-vertical-rows]]]
       order = 0
