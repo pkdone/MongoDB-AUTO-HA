@@ -40,7 +40,7 @@ cat start.sh
 ./start.sh
 ```
 
-&nbsp;&nbsp;&nbsp;&nbsp;_(the 3 monitoring scripts will now report that the servers are up but not initialized)_
+&nbsp;&nbsp;&nbsp;&nbsp;_(the 3 monitoring scripts will now report that the servers are up but not initialised)_
 
 3. In the __top right__ pane, clear the existing output and first show and explain the contents of the `configure.sh` shell script which will configure a replica set using the 3 running `mongod` servers, then run it:
 ```bash

@@ -23,7 +23,7 @@ while True:
             print(' Reconnected....\n')
             connect_problem = False
 
-        time.sleep(0.01)
+        time.sleep(0.025)
     except KeyboardInterrupt:
         print()
         sys.exit(0)
