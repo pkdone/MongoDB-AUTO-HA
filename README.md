@@ -18,18 +18,18 @@ Ensure the following are already installed on the laptop/workstation.
 
 ## Demo Setup
 
-Using a terminal/shell from the base directory of this project, launch the Terminator multi-paned terminal where the whole of the demo will then be executed from (uses the specific configuration file `.terminator_config` to show Terminator in specific layout required for the demo):
+Using a normal native terminal/shell from the base directory of this project, launch the Terminator multi-paned terminal application where the whole of the demo will then be executed from (uses the specific configuration file `.terminator_config` to show Terminator in specific layout required for the demo):
 ```bash
 ./terminator.sh
 ```
 
 ## Demo Execution
 
-1. Using the __3 bottom panes__ shown Terminator, start 3 instances of a _monitoring_ Bash/Mongo-Shell script, one in each pane, which will check the health of local `mongod` servers listening on ports `27000`, `27001` and `27003` respectively (__IMPORTANT__: do not change these ports as other scripts assume these specific ports are being used):
+1. Using the __3 bottom panes__ shown in Terminator, start 3 instances of a _monitoring_ Bash/Mongo-Shell script, one in each pane, which will check the health of local `mongod` servers listening on ports `27000`, `27001` and `27002` respectively (__IMPORTANT__: do not change these ports as other scripts assume these specific ports are being used):
 ```bash
 ./monitor.sh 27000
-./monitor.sh 27000
-./monitor.sh 27000
+./monitor.sh 27001
+./monitor.sh 27002
 ```
 
 &nbsp;&nbsp;&nbsp;&nbsp;_(initially these monitoring scripts will report that the `mongod` servers are down, because they have not been started yet)_
