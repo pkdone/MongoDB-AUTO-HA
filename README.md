@@ -100,6 +100,6 @@ kill -9 12345
 
 # Credits / Thanks
 
-* __Eugene Bogaart__ for coming up with the server health detection and colour coding mechanism which I adapted in `monitor.sh`
+* __Eugene Bogaart__ for coming up with the original server health detection and colour coding mechanism which I then adapted further in `monitor.sh`
 * __Jim Blackhurst__ for the original suggestion to use _Terminator_ for displaying the 5 required 'views'
 
