@@ -85,7 +85,7 @@ clear
 ./insert.py retry
 ```
 
-&nbsp;&nbsp;&nbsp;&nbsp;_(notice that the output of this Python script now shows that retryable reads & writes are set to True)_
+&nbsp;&nbsp;&nbsp;&nbsp;_(notice that the output of this Python script now shows that retryable reads & writes are set to TRUE)_
 
 8. In the __top right__ pane, clear the existing output and list the `mongod` server process IDs again, then terminate the one currently shown as primary (replace the _12345_ argument with the real process ID):
 ```bash
