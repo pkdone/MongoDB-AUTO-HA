@@ -1,6 +1,6 @@
 # MongoDB-AUTO-HA: 
 
-Project to enable someone to easily demonstrate the fast failover and auto-healing of a MongoDB Replica Set, all run and demoonstrated from a single laptop/workstation. Note: For MDB-SAs there is also a [demo video](https://drive.google.com/file/d/1qTxEb569CpIw2-6Yf61Cr66Q6dMZS-CL/).
+Project to enable someone to easily demonstrate the fast failover and auto-healing of a MongoDB Replica Set, all run and demonstrated from a single laptop/workstation. Note: For MDB-SAs there is also a [demo video](https://drive.google.com/file/d/1qTxEb569CpIw2-6Yf61Cr66Q6dMZS-CL/).
 
  ![Demo UI](.auto_ha.png)
 
@@ -77,7 +77,7 @@ mongod --replSet TestRS --port 27000 --dbpath /tmp/data/r0 --fork --logpath /tmp
 
 &nbsp;&nbsp;&nbsp;&nbsp;_(the 3 monitoring scripts will now report that all 3 servers are happily running and the recovered server, shown now as a secondary, is catching up on the records it missed when it was down)_
 
-7. In the __top left__ pane, stop the Python script running and then re-start it again with the argument `retry` passed to it, to instruct the PyMongo driver to now enable retryable reads & writes, to further insulate the client application from the short failover window that occurs when a primary goes dowm:
+7. In the __top left__ pane, stop the Python script running and then re-start it again with the argument `retry` passed to it, to instruct the PyMongo driver to now enable retryable reads & writes, to further insulate the client application from the short failover window that occurs when a primary goes down:
 
 ```bash
 # Type CTRL-C / CMD-C
@@ -94,7 +94,7 @@ clear
 kill -9 12345
 ```
 
-&nbsp;&nbsp;&nbsp;&nbsp;_(this time, in the **top left** pane, the Python script will not report any connection problems when the failover occurrs (notice the running monitoring scripts in the bottom 3 panes will show a stall in increasing number of inserted records, for a second or two, before increasing again when one of the two remaining `mongod` servers automatically becomes the primary)_
+&nbsp;&nbsp;&nbsp;&nbsp;_(this time, in the **top left** pane, the Python script will not report any connection problems when the failover occurs (notice the running monitoring scripts in the bottom 3 panes will show a stall in increasing number of inserted records, for a second or two, before increasing again when one of the two remaining `mongod` servers automatically becomes the primary)_
 
 &nbsp;
 
