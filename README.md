@@ -104,5 +104,5 @@ kill -9 12345
 
 * __Eugene Bogaart__ for coming up with the original server health detection and colour coding mechanism which I then adapted further in `monitor.sh`
 * __Jim Blackhurst__ for the original suggestion to use _Terminator_ for displaying the 5 required 'views'
-* __Jake McInteer__ for tests on MacOS + finding and reporting some bugs
+* __Jake McInteer__ for testing on MacOS + finding and reporting some bugs
 
