@@ -50,7 +50,7 @@ while(true); do
                     line += '${RESET_CMD}'
                     
                     if (!err) {
-                        line += ' - Docs: ' + db.bookings.find().count()
+                        line += ' - Docs: ' + db.bookings.countDocuments({})
                     }
 
                     print(line);

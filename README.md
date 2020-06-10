@@ -68,7 +68,7 @@ kill -9 12345
 
 &nbsp;&nbsp;&nbsp;&nbsp;_(the 3 monitoring scripts will report that one of the servers has gone down, and for the remaining 2 servers, for a second or two, both were still secondaries with no more records being inserted, and then one automatically becomes the primary and additional records are automatically inserted continuously again; also notice that in the **top left** pane the Python script reported a temporary connection problem, before carry on its work (because retryable reads and writes have not been enabled for it)_
 
-6. In the __top right__ pane, clear the existing output and display the content of `start.sh` shell script and then copy the one line, corresponding to the killed `mongod` server, then paste and execute the command line in the same pane terminal, to restart the _failed_ `mongod` server (the example below shows the command line for starting the first of the 3 `mongod` servers, which you may need to change if it was one of the other 2 servers which had been killed):
+6. In the __top right__ pane, clear the existing output and display the content of `start.sh` shell script and then copy the one line, corresponding to the killed `mongod` server, then paste and execute the copied command into the same pane terminal, to restart the _failed_ `mongod` server (the example below shows the command line for starting the first of the 3 `mongod` servers, which you may need to change if it was one of the other 2 servers which had been killed):
 ```bash
 clear
 cat start.sh
