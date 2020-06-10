@@ -20,13 +20,11 @@ RED_CMD=$(echo -en "${ESCAPE}${RED}")
 
 # LOOP FOREVER MONITORING
 while(true); do
-    sleep 1
     mongo --port $PORT --eval "db.stats()" > /dev/null 2>&1  # Test connection with simple ccommand
     RESULT=$?  # Returns 0 if mongo connected
 
     if [ $RESULT -ne 0 ]; then
         echo "${RED_CMD}Down${RESET_CMD}"
-        sleep 1
     else
         mongo --port $PORT --quiet --eval "
             rs.slaveOk();
@@ -36,7 +34,7 @@ while(true); do
             try {
                 while (true) {
                     line = '${ESCAPE}';
-                    err = false;
+                    ready = true;
 
                     if (db.isMaster().ismaster) {
                         line += '${BLUE}Primary';
@@ -44,12 +42,12 @@ while(true); do
                         line += '${GREEN}Secondary';
                     } else {
                         line += '${PURPLE}Not Initialised';
-                        err = true;
+                        ready = false;
                     }
 
                     line += '${RESET_CMD}'
                     
-                    if (!err) {
+                    if (ready) {
                         line += ' - Docs: ' + db.bookings.countDocuments({})
                     }
 
@@ -63,5 +61,7 @@ while(true); do
         
         printf "\nPress CTRL-C again quickly if you want to completely terminate\n"
     fi    
+    
+    sleep 1    
 done
 
