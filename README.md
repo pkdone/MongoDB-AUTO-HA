@@ -18,7 +18,7 @@ Ensure the following are already installed on the laptop/workstation.
 
 ## Demo Setup
 
-Using a normal native terminal/shell, from the base directory of this project launch the Terminator multi-paned terminal application where the whole of the demo will then be executed from (this uses a specific configuration file `.terminator_config` to show Terminator in the required layout structure required for the demo):
+Using a normal OS native terminal/shell, from the base directory of this project launch the Terminator multi-paned terminal application where the whole of the demo will then be executed from (this uses a specific configuration file `.terminator_config` to show Terminator in the required layout structure to best show this demo):
 ```bash
 ./terminator.sh
 ```
