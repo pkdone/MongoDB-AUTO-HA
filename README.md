@@ -1,4 +1,4 @@
-# MongoDB-AUTO-HA: 
+# MongoDB-AUTO-HA
 
 Project to enable someone to easily demonstrate the fast failover and auto-healing of a MongoDB Replica Set, all run and demonstrated from a single laptop/workstation. Note: For MDB-SAs there is also a [demo video](https://drive.google.com/file/d/1qTxEb569CpIw2-6Yf61Cr66Q6dMZS-CL/).
 
