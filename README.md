@@ -11,7 +11,7 @@ Ensure the following software is already installed on the laptop/workstation.
 - [MongoDB database (version 3.6 or greater)](https://docs.mongodb.com/manual/installation/)
 - [Python 3 interpreter](https://www.python.org/downloads/)
 - [PIP Python package installer](https://pip.pypa.io/en/stable/installing/)
-- [MongoDB's latest Python driver - PyMongo](https://api.mongodb.com/python/current/installation.html)
+- [MongoDB's latest Python driver - PyMongo](https://docs.mongodb.com/drivers/pymongo/)
 - [Python DNS library - dnspython](https://pypi.org/project/dnspython/)
 - OPTIONAL: [Terminator multi-paned terminal](https://gnometerminator.blogspot.com/p/introduction.html) (also see the [manual](https://terminator-gtk3.readthedocs.io/))
 
